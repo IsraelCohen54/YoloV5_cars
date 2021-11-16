@@ -20,14 +20,14 @@ model.classes = 2  # car recognition only, class number at coco dataset...
 model.conf = 0.73  # confidence threshold
 
 # Vid handling:
-vidcap = cv2.VideoCapture('C:/Users/Israel/PycharmProjects/bootcampYoloEntryProject/Cars_vid2.mp4')
+vidcap = cv2.VideoCapture('C:/Users/Israel/PycharmProjects/bootcampYoloEntryProject/Source_vid.mp4')
 
 #read frame
 success, image = vidcap.read()
 img_size_h, img_size_w, rgb = image.shape
 size = (img_size_w, img_size_h)
 fourcc = cv2.VideoWriter_fourcc(*"MJPG")
-out = cv2.VideoWriter(os.path.join('./vid_conct', 'cars_simple_check2.avi'), fourcc, 30, size, True)
+out = cv2.VideoWriter(os.path.join('./vid_conct', 'result.avi'), fourcc, 30, size, True)
 output = [] #data for json
 global_counter = 0
 
