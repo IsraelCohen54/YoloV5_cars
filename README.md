@@ -1,4 +1,4 @@
-# Yolov5_cars
+# YoloV5_cars
 Using trained model to recognize cars with 0.73 recognition threshold.
 
 Input: video from local folder.
